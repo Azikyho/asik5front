@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #dedede;
+}
+
+.page-container {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header" "main" "footer";
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    background: #212529;
+    padding: 15px 20px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 26px;
+}
+
+.navbarr .nav-link {
+    color: white;
+    padding: 10px 15px;
+}
+
+.main-content {
+    grid-area: main;
+    padding: 25px 15px;
+}
+
+.text {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.text h2 {
+    font-size: 28px;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.box {
+    background: white;
+    width: calc(50% - 10px);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    scroll-margin-top: 20px;
+}
+
+.box h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.full-box {
+    width: 100%;
+}
+
+.simple-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.simple-form input[type="text"],
+.simple-form input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #767676;
+    border-radius: 5px;
+}
+
+.simple-form button,
+.action-btn {
+    background: #212529;
+    color: white;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 5px;
+}
+
+.profile-info p {
+    margin-bottom: 10px;
+}
+
+.hobby-list {
+    padding-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.hobby-list li {
+    padding: 6px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.form-result {
+    margin: 12px 0 0;
+}
+
+.form-result:empty {
+    display: none;
+}
+
+.footer {
+    grid-area: footer;
+    background: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .box { width: 100%; padding: 20px; }
+    .header { align-items: flex-start; }
+    .header h1 { font-size: 22px; padding-top: 10px; }
+    .text h2 { font-size: 24px; }
+}
