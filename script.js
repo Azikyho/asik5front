@@ -1,6 +1,6 @@
 const userProfile = {
     name: 'Azamat Askar',
-    birthYear: 2005,
+    birthYear: 2007,
     isDeveloper: true,
     hobbies: ['Coding', 'Sports', 'Music', 'Reading']
 };
